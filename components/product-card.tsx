@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { ShoppingCart, MessageCircle, ChevronDown, ChevronUp } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -56,9 +57,11 @@ export default function ProductCard({ product }: ProductCardProps) {
     <Card className="overflow-hidden">
       <CardHeader className="p-0">
         <div className="aspect-square overflow-hidden">
-          <img
+          <Image
             src={product.image || "/placeholder.svg"}
             alt={product.name}
+            width={400}
+            height={400}
             className="h-full w-full object-cover transition-transform hover:scale-105"
           />
         </div>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, Scissors } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -59,12 +60,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-center">
-                <img
+                <Image
                   src="/hero-image.jpeg"
                   alt="Stylish woman wearing a wig"
                   width={600}
                   height={600}
                   className="aspect-square w-full max-w-[600px] rounded-xl object-cover shadow-lg"
+                  priority
                 />
               </div>
             </div>

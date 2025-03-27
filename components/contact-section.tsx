@@ -50,7 +50,7 @@ export default function ContactSection() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Have questions about our wigs or need styling advice? We're here to help!
+              Have questions about our wigs or need styling advice? We&apos;re here to help!
             </p>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function ContactSection() {
           <Card>
             <CardHeader>
               <CardTitle>Send us a message</CardTitle>
-              <CardDescription>Fill out the form below and we'll get back to you as soon as possible.</CardDescription>
+              <CardDescription>Fill out the form below and we&apos;ll get back to you as soon as possible.</CardDescription>
             </CardHeader>
             <CardContent>
               {isSubmitted ? (
@@ -68,7 +68,7 @@ export default function ContactSection() {
                   </div>
                   <h3 className="text-xl font-semibold">Message Sent!</h3>
                   <p className="text-center text-muted-foreground">
-                    Thank you for reaching out. We'll respond to your inquiry shortly.
+                    Thank you for reaching out. We&apos;ll respond to your inquiry shortly.
                   </p>
                 </div>
               ) : (
@@ -117,7 +117,7 @@ export default function ContactSection() {
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-2">
               <h3 className="text-xl font-bold">Contact Information</h3>
-              <p className="text-muted-foreground">We're available Monday through Friday, 9am to 5pm.</p>
+              <p className="text-muted-foreground">We&apos;re available Monday through Friday, 9am to 5pm.</p>
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
@@ -151,7 +151,7 @@ export default function ContactSection() {
               </p>
               <div className="flex flex-col gap-2 sm:flex-row mt-4">
                 <a
-                  href="https://wa.me/1234567890?text=I'm%20interested%20in%20a%20wig%20consultation"
+                  href="https://wa.me/1234567890?text=I&apos;m%20interested%20in%20a%20wig%20consultation"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft, Scissors, Trash2 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -123,7 +124,7 @@ export default function CartPage() {
           <div className="text-center py-12">
             <Scissors className="mx-auto h-12 w-12 text-muted-foreground mb-4" />
             <h2 className="text-xl font-semibold mb-2">Your cart is empty</h2>
-            <p className="text-muted-foreground mb-6">Looks like you haven't added anything to your cart yet.</p>
+            <p className="text-muted-foreground mb-6">Looks like you haven&apos;t added anything to your cart yet.</p>
             <Link href="/">
               <Button>Continue Shopping</Button>
             </Link>
@@ -140,9 +141,11 @@ export default function CartPage() {
                     return (
                       <div key={item.productId} className="flex items-center gap-4 py-4 border-b last:border-0">
                         <div className="w-20 h-20 rounded-md overflow-hidden">
-                          <img
+                          <Image
                             src={product.image || "/placeholder.svg"}
                             alt={product.name}
+                            width={80}
+                            height={80}
                             className="w-full h-full object-cover"
                           />
                         </div>
