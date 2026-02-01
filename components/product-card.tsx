@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import type { Product, CartItem } from "@/lib/types"
 import { formatPrice } from "@/lib/utils"
+import { config } from "@/lib/config"
+
 
 interface ProductCardProps {
   product: Product
@@ -122,7 +124,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <Button
           onClick={() => {
             const message = `Hi, I'm interested in the ${product.name} (${product.specifications.color}) - ${formatPrice(product.price)}`
-            window.open(`https://wa.me/+27659876543?text=${encodeURIComponent(message)}`, '_blank')
+            window.open(`https://wa.me/${config.contact.whatsapp.replace(/[^0-9+]/g, '')}?text=${encodeURIComponent(message)}`, '_blank')
           }}
           variant="outline"
           className="w-full"

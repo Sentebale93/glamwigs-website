@@ -9,6 +9,11 @@ import { Button } from "@/components/ui/button"
 import { products } from "@/lib/products"
 import type { CartItem } from "@/lib/types"
 import { formatPrice } from "@/lib/utils"
+import { config } from "@/lib/config"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
+
 
 export default function CartPage() {
   const [cartItems, setCartItems] = useState<CartItem[]>([])
@@ -90,7 +95,7 @@ export default function CartPage() {
     )
 
     // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/+27123456789?text=${message}`, '_blank')
+    window.open(`https://wa.me/${config.contact.whatsapp.replace(/[^0-9+]/g, '')}?text=${message}`, '_blank')
 
     // Clear cart
     setCartItems([])
@@ -191,6 +196,53 @@ export default function CartPage() {
               </div>
             </div>
             <div>
+              <div className="rounded-lg border shadow-sm p-6 space-y-4 mb-6">
+                <h2 className="font-semibold text-lg">Customer Information</h2>
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="customer-name">Full Name *</Label>
+                    <Input
+                      id="customer-name"
+                      placeholder="Enter your full name"
+                      value={customerInfo.name}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, name: e.target.value })}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="customer-whatsapp">WhatsApp Number *</Label>
+                    <Input
+                      id="customer-whatsapp"
+                      type="tel"
+                      placeholder="+27 XX XXX XXXX"
+                      value={customerInfo.whatsapp}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, whatsapp: e.target.value })}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="customer-email">Email (Optional)</Label>
+                    <Input
+                      id="customer-email"
+                      type="email"
+                      placeholder="your.email@example.com"
+                      value={customerInfo.email}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, email: e.target.value })}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="customer-address">Delivery Address *</Label>
+                    <Textarea
+                      id="customer-address"
+                      placeholder="Enter your full delivery address"
+                      value={customerInfo.address}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, address: e.target.value })}
+                      rows={3}
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
               <div className="rounded-lg border shadow-sm p-6 space-y-4 sticky top-20">
                 <h2 className="font-semibold text-lg">Order Summary</h2>
                 <div className="space-y-2">

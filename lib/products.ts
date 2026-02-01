@@ -24,7 +24,7 @@ export const products: Product[] = [
     description:
       "Medium-length curly wig with a pre-plucked lace front for a natural hairline. Heat resistant up to 180°C.",
     price: 129900,
-    image: "/image2.jpeg?height=300&width=300",
+    image: "/image2.jpeg",
     inStock: true,
     category: "Lace Front Wigs",
     specifications: {
@@ -41,7 +41,7 @@ export const products: Product[] = [
     description:
       "Premium 100% human hair wig with a silky straight texture. Can be dyed, bleached, and styled with heat tools.",
     price: 249900,
-    image: "/image3.jpeg?height=300&width=300",
+    image: "/image3.jpeg",
     inStock: true,
     category: "Human Hair Wigs",
     specifications: {
@@ -57,7 +57,7 @@ export const products: Product[] = [
     name: "Pixie Cut Wig",
     description: "Short pixie cut wig with side-swept bangs. Perfect for a chic, low-maintenance look.",
     price: 69900,
-    image: "/image4.jpeg?height=300&width=300",
+    image: "/image4.jpeg",
     inStock: true,
     category: "Short Wigs",
     specifications: {
@@ -74,7 +74,7 @@ export const products: Product[] = [
     description:
       "Shoulder-length wavy wig with a stunning ombré color effect. Features adjustable straps for a secure fit.",
     price: 149900,
-    image: "image5.jpeg?height=300&width=300",
+    image: "/image5.jpeg",
     inStock: true,
     category: "Synthetic Wigs",
     specifications: {
@@ -90,7 +90,7 @@ export const products: Product[] = [
     name: "Braided Lace Front Wig",
     description: "Pre-braided box braid wig with a natural-looking lace front. Saves hours of styling time.",
     price: 179900,
-    image: "/image6.jpeg?height=300&width=300",
+    image: "/image6.jpeg",
     inStock: true,
     category: "Braided Wigs",
     specifications: {
@@ -107,7 +107,7 @@ export const products: Product[] = [
     description:
       "Full and voluminous afro kinky curly wig. Made with heat-resistant synthetic fibers that mimic natural hair texture.",
     price: 159900,
-    image: "/image7.jpeg?height=300&width=300",
+    image: "/image7.jpeg",
     inStock: true,
     category: "Textured Wigs",
     specifications: {
@@ -124,7 +124,7 @@ export const products: Product[] = [
     description:
       "Long, platinum blonde wig with subtle waves. Includes a comfortable breathable cap with adjustable straps.",
     price: 119900,
-    image: "/image8.jpeg?height=300&width=300",
+    image: "/image8.jpeg",
     inStock: true,
     category: "Synthetic Wigs",
     specifications: {
@@ -141,7 +141,7 @@ export const products: Product[] = [
     description:
       "Medium-length synthetic dreadlock wig with a natural-looking scalp. Lightweight and comfortable for all-day wear.",
     price: 189900,
-    image: "/image9.jpeg?height=300&width=300",
+    image: "/image9.jpeg",
     inStock: true,
     category: "Dreadlock Wigs",
     specifications: {
@@ -158,7 +158,7 @@ export const products: Product[] = [
     description:
       "Complete wig maintenance kit including a stand, brush, shampoo, conditioner, and storage bag to keep your wigs looking their best.",
     price: 59900,
-    image: "/image10.jpeg?height=300&width=300",
+    image: "/image10.jpeg",
     inStock: true,
     category: "Accessories",
     specifications: {
