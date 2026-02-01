@@ -389,7 +389,7 @@ export default function ProductsPage() {
           <DialogHeader>
             <DialogTitle>Delete Product</DialogTitle>
             <DialogDescription>
-              Are you sure you want to delete "{selectedProduct?.name}"? This action cannot be undone.
+              Are you sure you want to delete {`"`}{selectedProduct?.name}{`"`}? This action cannot be undone.
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>

@@ -18,7 +18,7 @@ export default function ContactSection() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Have questions about our wigs or need styling advice? We're just a message away!
+              Have questions about our wigs or need styling advice? We&apos;re just a message away!
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function ContactSection() {
               <div className="text-center space-y-2">
                 <h3 className="font-semibold text-lg">Why WhatsApp?</h3>
                 <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-                  Get instant responses, share photos of styles you like, and receive personalized recommendations directly in your chat. It's the fastest way to find your perfect wig!
+                  Get instant responses, share photos of styles you like, and receive personalized recommendations directly in your chat. It&apos;s the fastest way to find your perfect wig!
                 </p>
               </div>
             </CardContent>
